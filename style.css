@@ -1,0 +1,48 @@
+#file1 {
+  display: none;
+}
+body {
+  font-family: sans-serif;
+}
+
+.select {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.select label,
+.select .btn {
+  cursor: pointer;
+}
+
+.select .btn {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #00bcd4;
+  background: #ececec;
+  transition: 0.2s;
+  white-spacing: 10;
+  border: 0.5px solid #bdbdbd;
+  border-right: 0;
+}
+
+.select .btn.active {
+  background: #00bcd4;
+  color: #ececec;
+}
+
+.select .btn:hover {
+  opacity: 0.4;
+}
+
+.select .btn:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+
+.select .btn:last-of-type {
+  border-radius: 0 10px 10px 0;
+  border: 0.5px solid #bdbdbd;
+}
